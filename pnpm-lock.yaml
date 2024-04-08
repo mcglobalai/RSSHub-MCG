@@ -78,8 +78,8 @@ dependencies:
     specifier: 0.6.3
     version: 0.6.3
   instagram-private-api:
-    specifier: 1.45.3
-    version: 1.45.3(re2@1.19.1)
+    specifier: 1.46.1
+    version: 1.46.1(re2@1.19.1)
   ioredis:
     specifier: 5.3.2
     version: 5.3.2
@@ -1032,7 +1032,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       eslint: 8.45.0
-      jschardet: 3.0.0
+      jschardet: 3.1.2
       lodash: 4.17.21
       utf8: 3.0.0
     transitivePeerDependencies:
@@ -1114,7 +1114,7 @@ packages:
       '@babel/runtime-corejs2': 7.21.0
       '@postlight/ci-failed-test-reporter': 1.0.26
       cheerio: 0.22.0
-      difflib: github.com/postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed
+      difflib: git/github.com+postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed
       ellipsize: 0.1.0
       iconv-lite: 0.5.0
       moment: 2.29.4
@@ -4146,8 +4146,8 @@ packages:
   /inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
-  /instagram-private-api@1.45.3(re2@1.19.1):
-    resolution: {integrity: sha512-IybVclR0Ahh01rn/4r9sxRn4vkfbfMXAXFVljsGk51mfL/EyyP6Yn+aWIxbG/JboArR1POJzaFI5bQOR99R3xA==}
+  /instagram-private-api@1.46.1(re2@1.19.1):
+    resolution: {integrity: sha512-fq0q6UfhpikKZ5Kw8HNwS6YpsNghE9I/uc8AM9Do9nsQ+3H1u0jLz+0t/FcGkGTjZz5VGvU8s2VbWj9wxchwYg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       re2: ^1.17.2
@@ -4892,8 +4892,8 @@ packages:
   /jsbn@0.1.1:
     resolution: {integrity: sha512-UVU9dibq2JcFWxQPA6KCqj5O42VOmAY3zQUfEKxU0KpTGXwNoCjkX1e13eHNvw/xPynt6pU0rZ1htjWTNTSXsg==}
 
-  /jschardet@3.0.0:
-    resolution: {integrity: sha512-lJH6tJ77V8Nzd5QWRkFYCLc13a3vADkh3r/Fi8HupZGWk2OVVDfnZP8V/VgQgZ+lzW0kG2UGb5hFgt3V3ndotQ==}
+  /jschardet@3.1.2:
+    resolution: {integrity: sha512-mw3CBZGzW8nUBPYhFU2ztZ/kJ6NClQUQVpyzvFMfznZsoC///ZQ30J2RCUanNsr5yF22LqhgYr/lj807/ZleWA==}
     engines: {node: '>=0.1.90'}
     dev: true
 
@@ -8180,8 +8180,8 @@ packages:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
 
-  github.com/postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+  git/github.com+postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
+    resolution: {commit: 32e8e38c7fcd935241b9baab71bb432fd9b166ed, repo: git@github.com:postlight/difflib.js.git, type: git}
     name: difflib
     version: 0.2.6
     dependencies:
