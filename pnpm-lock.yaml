@@ -15,8 +15,8 @@ dependencies:
     specifier: 2.2.3
     version: 2.2.3
   '@sentry/node':
-    specifier: 7.59.3
-    version: 7.59.3
+    specifier: 7.112.2
+    version: 7.112.2
   aes-js:
     specifier: 3.1.2
     version: 3.1.2
@@ -1032,7 +1032,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       eslint: 8.45.0
-      jschardet: 3.0.0
+      jschardet: 3.1.2
       lodash: 4.17.21
       utf8: 3.0.0
     transitivePeerDependencies:
@@ -1114,7 +1114,7 @@ packages:
       '@babel/runtime-corejs2': 7.21.0
       '@postlight/ci-failed-test-reporter': 1.0.26
       cheerio: 0.22.0
-      difflib: github.com/postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed
+      difflib: git/github.com+postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed
       ellipsize: 0.1.0
       iconv-lite: 0.5.0
       moment: 2.29.4
@@ -1194,52 +1194,54 @@ packages:
       selderee: 0.11.0
     dev: false
 
-  /@sentry-internal/tracing@7.59.3:
-    resolution: {integrity: sha512-/RkBj/0zQKGsW/UYg6hufrLHHguncLfu4610FCPWpVp0K5Yu5ou8/Aw8D76G3ZxD2TiuSNGwX0o7TYN371ZqTQ==}
+  /@sentry-internal/tracing@7.112.2:
+    resolution: {integrity: sha512-fT1Y46J4lfXZkgFkb03YMNeIEs2xS6jdKMoukMFQfRfVvL9fSWEbTgZpHPd/YTT8r2i082XzjtAoQNgklm/0Hw==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry/core': 7.59.3
-      '@sentry/types': 7.59.3
-      '@sentry/utils': 7.59.3
-      tslib: 2.6.0
+      '@sentry/core': 7.112.2
+      '@sentry/types': 7.112.2
+      '@sentry/utils': 7.112.2
     dev: false
 
-  /@sentry/core@7.59.3:
-    resolution: {integrity: sha512-cGBOwT9gziIn50fnlBH1WGQlGcHi7wrbvOCyrex4MxKnn1LSBYWBhwU0ymj8DI/9MyPrGDNGkrgpV0WJWBSClg==}
+  /@sentry/core@7.112.2:
+    resolution: {integrity: sha512-gHPCcJobbMkk0VR18J65WYQTt3ED4qC6X9lHKp27Ddt63E+MDGkG6lvYBU1LS8cV7CdyBGC1XXDCfor61GvLsA==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry/types': 7.59.3
-      '@sentry/utils': 7.59.3
-      tslib: 2.6.0
+      '@sentry/types': 7.112.2
+      '@sentry/utils': 7.112.2
     dev: false
 
-  /@sentry/node@7.59.3:
-    resolution: {integrity: sha512-5dG90YzmKjuy5TK04qDuc9LBxnGfqsZw8Oh9giwOBfQVCaFp7R14AXyQ1F8k3iUF+4sGeTvoqi9I/GKAItVmlA==}
+  /@sentry/integrations@7.112.2:
+    resolution: {integrity: sha512-ioC2yyU6DqtLkdmWnm87oNvdn2+9oKctJeA4t+jkS6JaJ10DcezjCwiLscX4rhB9aWJV3IWF7Op0O6K3w0t2Hg==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry-internal/tracing': 7.59.3
-      '@sentry/core': 7.59.3
-      '@sentry/types': 7.59.3
-      '@sentry/utils': 7.59.3
-      cookie: 0.4.2
-      https-proxy-agent: 5.0.1
-      lru_map: 0.3.3
-      tslib: 2.6.0
-    transitivePeerDependencies:
-      - supports-color
+      '@sentry/core': 7.112.2
+      '@sentry/types': 7.112.2
+      '@sentry/utils': 7.112.2
+      localforage: 1.10.0
     dev: false
 
-  /@sentry/types@7.59.3:
-    resolution: {integrity: sha512-HQ/Pd3YHyIa4HM0bGfOsfI4ZF+sLVs6II9VtlS4hsVporm4ETl3Obld5HywO3aVYvWOk5j/bpAW9JYsxXjRG5A==}
-    engines: {node: '>=8'}
-    dev: false
-
-  /@sentry/utils@7.59.3:
-    resolution: {integrity: sha512-Q57xauMKuzd6S+POA1fmulfjzTsb/z118TNAfZZNkHqVB48hHBqgzdhbEBmN4jPCSKV2Cx7VJUoDZxJfzQyLUQ==}
+  /@sentry/node@7.112.2:
+    resolution: {integrity: sha512-MNzkqER8jc2xOS3ArkCLH5hakzu15tcjeC7qjU7rQ1Ms4WuV+MG0docSRESux0/p23Qjzf9tZOc8C5Eq+Sxduw==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry/types': 7.59.3
-      tslib: 2.6.0
+      '@sentry-internal/tracing': 7.112.2
+      '@sentry/core': 7.112.2
+      '@sentry/integrations': 7.112.2
+      '@sentry/types': 7.112.2
+      '@sentry/utils': 7.112.2
+    dev: false
+
+  /@sentry/types@7.112.2:
+    resolution: {integrity: sha512-kCMLt7yhY5OkWE9MeowlTNmox9pqDxcpvqguMo4BDNZM5+v9SEb1AauAdR78E1a1V8TyCzjBD7JDfXWhvpYBcQ==}
+    engines: {node: '>=8'}
+    dev: false
+
+  /@sentry/utils@7.112.2:
+    resolution: {integrity: sha512-OjLh0hx0t1EcL4ZIjf+4svlmmP+tHUDGcr5qpFWH78tjmkPW4+cqPuZCZfHSuWcDdeiaXi8TnYoVRqDcJKK/eQ==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@sentry/types': 7.112.2
     dev: false
 
   /@sinclair/typebox@0.27.8:
@@ -2450,11 +2452,6 @@ packages:
   /convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
     dev: true
-
-  /cookie@0.4.2:
-    resolution: {integrity: sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==}
-    engines: {node: '>= 0.6'}
-    dev: false
 
   /cookiejar@2.1.4:
     resolution: {integrity: sha512-LDx6oHrK+PhzLKJU9j5S7/Y3jM/mUHvD/DeI1WQmJn652iPC5Y4TBzC9l+5OMOXlyTTA+SmVUPm0HQUwpD5Jqw==}
@@ -4109,6 +4106,10 @@ packages:
     hasBin: true
     dev: false
 
+  /immediate@3.0.6:
+    resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
+    dev: false
+
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -4892,8 +4893,8 @@ packages:
   /jsbn@0.1.1:
     resolution: {integrity: sha512-UVU9dibq2JcFWxQPA6KCqj5O42VOmAY3zQUfEKxU0KpTGXwNoCjkX1e13eHNvw/xPynt6pU0rZ1htjWTNTSXsg==}
 
-  /jschardet@3.0.0:
-    resolution: {integrity: sha512-lJH6tJ77V8Nzd5QWRkFYCLc13a3vADkh3r/Fi8HupZGWk2OVVDfnZP8V/VgQgZ+lzW0kG2UGb5hFgt3V3ndotQ==}
+  /jschardet@3.1.2:
+    resolution: {integrity: sha512-mw3CBZGzW8nUBPYhFU2ztZ/kJ6NClQUQVpyzvFMfznZsoC///ZQ30J2RCUanNsr5yF22LqhgYr/lj807/ZleWA==}
     engines: {node: '>=0.1.90'}
     dev: true
 
@@ -5203,6 +5204,12 @@ packages:
     resolution: {integrity: sha512-Ka0eC5LkF3IPNQHJmYBWljJsw0UvM6j+QdKRbWyCdTmYwvIDE6a7bCm0UkTAL/K+3KXK5qXT/ClcInU01OpdLg==}
     dev: false
 
+  /lie@3.1.1:
+    resolution: {integrity: sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==}
+    dependencies:
+      immediate: 3.0.6
+    dev: false
+
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
     engines: {node: '>=10'}
@@ -5258,6 +5265,12 @@ packages:
       through: 2.3.8
       wrap-ansi: 7.0.0
     dev: true
+
+  /localforage@1.10.0:
+    resolution: {integrity: sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==}
+    dependencies:
+      lie: 3.1.1
+    dev: false
 
   /locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -5386,10 +5399,6 @@ packages:
   /lru-cache@9.1.1:
     resolution: {integrity: sha512-65/Jky17UwSb0BuB9V+MyDpsOtXKmYwzhyl+cOa9XUiI4uV2Ouy/2voFP3+al0BjZbJgMBD8FojMpAf+Z+qn4A==}
     engines: {node: 14 || >=16.14}
-    dev: false
-
-  /lru_map@0.3.3:
-    resolution: {integrity: sha512-Pn9cox5CsMYngeDbmChANltQl+5pi6XmTrraMSzhPmMBbmgcxmqWry0U3PGapCU1yB4/LqCcom7qhHZiF/jGfQ==}
     dev: false
 
   /luxon@1.28.1:
@@ -8180,8 +8189,8 @@ packages:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
 
-  github.com/postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+  git/github.com+postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
+    resolution: {commit: 32e8e38c7fcd935241b9baab71bb432fd9b166ed, repo: git@github.com:postlight/difflib.js.git, type: git}
     name: difflib
     version: 0.2.6
     dependencies:
