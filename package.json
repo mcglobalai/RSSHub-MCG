@@ -93,7 +93,7 @@
     "bbcodejs": "0.0.4",
     "cheerio": "1.0.0-rc.12",
     "chrono-node": "2.6.4",
-    "city-timezones": "1.2.1",
+    "city-timezones": "1.3.0",
     "crypto-js": "4.1.1",
     "currency-symbol-map": "5.1.0",
     "dayjs": "1.11.8",
