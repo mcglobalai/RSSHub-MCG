@@ -140,7 +140,7 @@
     "rfc4648": "1.5.2",
     "rss-parser": "3.13.0",
     "showdown": "2.1.0",
-    "simplecc-wasm": "0.1.5",
+    "simplecc-wasm": "1.1.0",
     "socks-proxy-agent": "8.0.1",
     "source-map": "0.7.4",
     "tiny-async-pool": "2.1.0",
