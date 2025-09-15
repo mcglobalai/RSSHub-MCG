@@ -88,7 +88,7 @@
     "@postlight/parser": "2.2.3",
     "@sentry/node": "7.59.3",
     "aes-js": "3.1.2",
-    "art-template": "4.13.2",
+    "art-template": "4.13.4",
     "axios": "^1.4.0",
     "bbcodejs": "0.0.4",
     "cheerio": "1.0.0-rc.12",
