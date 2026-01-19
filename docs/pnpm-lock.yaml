@@ -21,8 +21,8 @@ dependencies:
     specifier: 13.0.1
     version: 13.0.1
   pinyin-pro:
-    specifier: 3.16.1
-    version: 3.16.1
+    specifier: 3.28.0
+    version: 3.28.0
   remark:
     specifier: 13.0.0
     version: 13.0.0
@@ -37,7 +37,7 @@ dependencies:
     version: 2.2.0
   remark-preset-prettier:
     specifier: 0.5.1
-    version: 0.5.1(prettier@2.8.8)
+    version: 0.5.1(prettier@3.8.0)
   remark-stringify:
     specifier: 9.0.1
     version: 9.0.1
@@ -2598,6 +2598,7 @@ packages:
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -3012,8 +3013,8 @@ packages:
       - supports-color
     dev: false
 
-  /chokidar@3.5.3:
-    resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
+  /chokidar@3.6.0:
+    resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
     requiresBuild: true
     dependencies:
@@ -3025,7 +3026,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: false
     optional: true
 
@@ -4860,16 +4861,16 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
-      nan: 2.17.0
+      nan: 2.24.0
     dev: false
     optional: true
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -4959,6 +4960,7 @@ packages:
   /glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
+    requiresBuild: true
     dependencies:
       is-glob: 4.0.3
     dev: false
@@ -5594,6 +5596,7 @@ packages:
   /is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
+    requiresBuild: true
     dependencies:
       binary-extensions: 2.2.0
     dev: false
@@ -6705,8 +6708,8 @@ packages:
       thunky: 1.1.0
     dev: false
 
-  /nan@2.17.0:
-    resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+  /nan@2.24.0:
+    resolution: {integrity: sha512-Vpf9qnVW1RaDkoNKFUvfxqAbtI8ncb8OJlqZ9wwpXzWPEsvsB1nvdUi6oYrHIkQ1Y/tMDnr1h4nczS0VB9Xykg==}
     requiresBuild: true
     dev: false
     optional: true
@@ -7223,8 +7226,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /pinyin-pro@3.16.1:
-    resolution: {integrity: sha512-Pm5vKjAO7EZ1w39Xw9/yzynNDbqFVWkvgCSPyHvvCCrhWrkeOK//2FvX2uoWb2yUzGTsruUqrAaKySG8TQV/0Q==}
+  /pinyin-pro@3.28.0:
+    resolution: {integrity: sha512-mMRty6RisoyYNphJrTo3pnvp3w8OMZBrXm9YSWkxhAfxKj1KZk2y8T2PDIZlDDRsvZ0No+Hz6FI4sZpA6Ey25g==}
     dev: false
 
   /pkg-dir@3.0.0:
@@ -7609,6 +7612,14 @@ packages:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /prettier@3.8.0:
+    resolution: {integrity: sha512-yEPsovQfpxYfgWNhCfECjG5AQaO+K3dp6XERmOepyPDVqcJm+bjyCVO3pmU+nAPe0N5dDvekfGezt/EIiRe1TA==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: false
 
   /pretty-bytes@5.6.0:
@@ -7840,6 +7851,7 @@ packages:
   /readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
+    requiresBuild: true
     dependencies:
       picomatch: 2.3.1
     dev: false
@@ -7968,13 +7980,13 @@ packages:
       - supports-color
     dev: false
 
-  /remark-preset-prettier@0.5.1(prettier@2.8.8):
+  /remark-preset-prettier@0.5.1(prettier@3.8.0):
     resolution: {integrity: sha512-cJx49HCHwA/3EWjIDiRTWPBBpGSkJlXOpcjdqcT6rGFFE+gjCrGSbNdgBQiLbBqXippZFD0OrI4bOWsWhulKrw==}
     engines: {node: '>=12'}
     peerDependencies:
       prettier: '>=1.0.0'
     dependencies:
-      prettier: 2.8.8
+      prettier: 3.8.0
     dev: false
 
   /remark-stringify@9.0.1:
@@ -9602,7 +9614,7 @@ packages:
       graceful-fs: 4.2.11
       neo-async: 2.6.2
     optionalDependencies:
-      chokidar: 3.5.3
+      chokidar: 3.6.0
       watchpack-chokidar2: 2.0.1
     transitivePeerDependencies:
       - supports-color
